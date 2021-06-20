@@ -1,5 +1,6 @@
 import React, {useState, useRef, useEffect} from "react";
 import TodoList from "./component/TodoList";
+import './App.css'
 
 const LS_key = 'reactTodoApp.todos'
 function App() {
@@ -42,11 +43,30 @@ function App() {
 
   return (
     <div className="App">
-      <input type='text' ref={todoNameRef}/>
-      <button onClick={handleAddTodo}>Add to do</button>
-      <TodoList todos={todos} toggleTodo={toggleTodo} />
-      <button onClick={handleDeleteCompleted}>Delete completed</button>
-      <p>{todos.filter(t => !t.complete).length} left to do</p>
+      <div className='container'>
+      <div className='top'>
+        <input type='text' ref={todoNameRef} className='check' />
+        <button className='add-button' onClick={handleAddTodo}><h3>Add to do</h3></button>
+
+
+      </div>
+      
+
+      <div className='list'>
+        <TodoList todos={todos} toggleTodo={toggleTodo} />
+        
+
+
+      </div>
+
+      <div className='bottom'>
+      <button className='delete-button' onClick={handleDeleteCompleted}><h3>Delete completed</h3></button>
+        <h5>{todos.filter(t => !t.complete).length} left to do</h5>
+
+
+      </div>
+      </div>
+      
 
       
     </div>
