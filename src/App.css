@@ -28,14 +28,20 @@
 }
 
 button {
-  border-radius: 5px;
+  border-radius: px;
 }
 
 .bottom > button {
   height: 2rem;
 }
 
-.top 
+.top {
+  text-align: center;
+}
+
+.top input {
+  border-radius: 3px;
+}
 
 .container {
   display: flex;
@@ -78,9 +84,14 @@ h3 {
   
 }
 
+h5 {
+  color: aliceblue;
+}
+
 @media (min-width : 576px) {
   .App {
     background-image: url('./background.jpg');
+    justify-content: center;
   }
   
   .item {
@@ -98,6 +109,19 @@ h3 {
 
   h3 {
     color: #333;
+  }
+
+  .top {
+    min-width: 450px;
+  }
+
+  .top input {
+    width: 75%;
+    border-radius: 3px;
+  }
+
+  .list {
+    min-width: 500px;
   }
 
   
