@@ -1,8 +1,8 @@
-# To-Do 'React-App'
+# To-Do 'React-Web-App'
 ## [try me](https://kaa-todo.netlify.app/)
 
 ## About the app:
-Simple and easy to use app to orgnize your tasks. It can help you to make list of your tasks, delete the completed ones quickly.
+Simple and easy to use web-app to orgnize your tasks. It can help you to make list of your tasks, delete the completed ones quickly.
 
 ## Tech:
 - React (jsx, useRef, useEffect, and useState)
