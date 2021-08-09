@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import TodoList from "./component/TodoList";
 import "./App.css";
+import Quote from "./component/Quote";
 
 const LS_key = "reactTodoApp.todos";
 
@@ -62,6 +63,7 @@ function App() {
           <h5>{todos.filter((t) => !t.complete).length} left to do</h5>
         </div>
       </div>
+      <Quote />
     </div>
   );
 }
