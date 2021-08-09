@@ -2,23 +2,35 @@
 *{
   box-sizing: border-box;
 }
+body {
+  
+}
 
 .App {
   /* text-align: center; */
   
   height: 100vh;
   width: 100vw;
-  background-image: url('./minibackground.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+ 
   display: flex;
   flex-direction: column;
   padding-top: 2rem;
   align-items: center;
+  margin:0;
+  
+  background:
+   linear-gradient(to top right,transparent 49.8%,#fff 50%) 
+    right -1px top 0
+    /50% 100% 
+    no-repeat,
+   #297fca;
 }
 
 .top > *{
+  height: 2rem;
+}
+
+.check, .add-button {
   height: 2rem;
 }
 
@@ -78,7 +90,7 @@ h5 {
 
 @media (min-width : 576px) {
   .App {
-    background-image: url('./background.jpg');
+    /* background-image: url('./background.jpg'); */
     justify-content: center;
   }
   
